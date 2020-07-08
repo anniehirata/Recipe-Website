@@ -13,8 +13,8 @@
 .recipe-card
 {
     position: relative;
-    width: 30%;
-    padding-top: max(30%, 225px);
+    width: 20%;
+    padding-top: max(20%, 225px);
     min-width: 225px;
     background-color: #2D2D2A;
     text-align: center;
