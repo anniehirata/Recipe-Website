@@ -1,0 +1,59 @@
+/* Whole Page */
+#recipe-page
+{
+    width: 80%;
+    margin: 5vh 10% 0 10%;
+    float: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+
+/* Recipe Card */
+.recipe-card
+{
+    position: relative;
+    width: 30%;
+    padding-top: 30%;
+    min-width: 225px;
+    background-color: #4E4A59;
+    text-align: center;
+    margin: 1.6%;
+    color: black;
+}
+
+#img-div
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(./default.jpg);
+    background-size: cover;
+    margin: 5%;
+}
+
+.recipe-name
+{
+    margin: 3.5% 0%;
+    width: 85%;
+    margin:7.5% 7.5% 0% 7.5%;
+    color: white;
+}
+
+
+/* Recipe Card List */
+#card-list
+{
+    padding: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
