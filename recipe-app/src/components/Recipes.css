@@ -14,9 +14,9 @@
 {
     position: relative;
     width: 30%;
-    padding-top: 30%;
+    padding-top: max(30%, 225px);
     min-width: 225px;
-    background-color: #4E4A59;
+    background-color: #2D2D2A;
     text-align: center;
     margin: 1.6%;
     color: black;
@@ -32,10 +32,9 @@
     width: 90%;
     background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(./default.jpg);
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('./default.jpg');
     background-size: cover;
     margin: 5%;
 }

@@ -10,7 +10,11 @@ class RecipeCard extends React.Component
 
     render()
     {
-            
+        var picture = null; //this.props.img
+        if(picture == null)
+            picture = "./default.jpg";
+
+        var style = {backgroundImage: "url(" + {picture} + ")"};
 
         return <div className="recipe-card">
             <div id="img-div">
@@ -25,7 +29,7 @@ export default class Recipes extends React.Component
 {
     render()
     {
-        var recipe_list = ['Sukiyaki', 'Olive Oil Pasta', 'Korean Ground Beef', 'Banana Bread']
+        var recipe_list = ['Sukiyaki', 'Olive Oil Pasta', 'Korean Ground Beef', 'Banana Bread', 'Pie Crust']
         return <div id="recipe-page">
                 <h1>My Recipes</h1>
                 <ul id="card-list">
