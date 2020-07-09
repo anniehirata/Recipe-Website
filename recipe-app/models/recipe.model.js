@@ -1,21 +1,26 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 const recipeSchema = new Schema (
     {
-        name = {
+        name: {
             type: String,
             required: true
         },
 
-        url = {
+        url: {
             type: String,
-            required: false
+            required: false,
         },
 
-        image = {
+        image: {
             type: String,
-            required: false
+            required: false,
+        },
+
+        user: {
+            type: String,
+            required: true
         }
     }
 );
