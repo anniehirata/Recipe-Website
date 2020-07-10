@@ -11,7 +11,8 @@ const userSchema = new Schema(
                   return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email); // email regex
                 },
                 message: props => `${props.value} is not a valid email`
-            }
+            },
+            unique: true
         },
 
         firstName: {
@@ -22,7 +23,19 @@ const userSchema = new Schema(
         lastName: {
             type: String,
             required: true
+        },
+
+        password: {
+            type: String,
+            min: [8, "Password must be at least 8 characters"],
+            required: true
         }
+
+        //for later: friends list and maybe recipes shared list
+        // friends: {
+        //     type: [String],
+        //     default: []
+        // }
     }
 );
 

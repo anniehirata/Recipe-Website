@@ -1,12 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+
 require('dotenv').config();
 
 // Express Routes
 const recipeRoute = require('./routes/recipe');
+const userRoute = require('./routes/user');
 // future routes
-// const userRoute = require('./routes/user');
 // const restaurantRoute = require('./routes/restaurant');
 // const generateRoute = require('./routes/generate');
 
@@ -37,8 +38,8 @@ app.use(cors()); // allow for cross origin resource sharing
 
 // endpoints
 app.use('/recipes', recipeRoute);
+app.use('/user', userRoute);
 // future endpoints
-// app.use('/user', userRoute);
 // app.use('/restaurant', restaurantRoute);
 // app.use('/generate', generateRoute);
 
