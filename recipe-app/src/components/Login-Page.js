@@ -37,10 +37,27 @@ export default class LoginPage extends React.Component
         event.preventDefault();
 
         // make call to backend
-        this.setState({
-            email: "",
-            password: ""
-        });
+        axios.post('http://localhost:5000/user/login', this.state)
+            .then(res => {
+                console.log(res);
+                if(res.data.resultCode === 0)
+                {
+                    alert("Signed in successfully");
+                    this.setState({
+                        email: "",
+                        password: ""
+                    });
+                }
+                else
+                {
+                    alert("Not able to sign in");
+                    this.setState({
+                        password: ""
+                    });
+                }
+            });
+
+        
     }
 
     render()
