@@ -1,8 +1,8 @@
 nav
 {
-    background-color: #007d8d;
-    height: 60px;
-    color: #F7F7F2;
+    background-color: #F07167;
+    height: 75px;
+    color: #FFFFFF;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -29,7 +29,7 @@ a
 
 a:hover 
 {
-    color: #cacaca;
+    color: #f5ccc9;
 }
 
 #nav-left
@@ -43,8 +43,14 @@ a:hover
 #nav-right
 {
     float: right;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-left: 0;
     font-size: 25px;
 }
 
+.log-sign
+{
+    padding: 3px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+}

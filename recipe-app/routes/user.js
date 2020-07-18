@@ -10,12 +10,7 @@ const User = require('../models/user.model');
 
 // Create account
 router.post("/signup", async (req, res) => {
-    bcrypt.hash(req.body.password, 10, (err, hash) => {
-        if(err)
-            res.json({resultCode: 1});
-        else
-            req.body.password = hash;
-    });
+    req.body.password = await bcrypt.hash(req.body.password, 10);
 
     var newUser = new User(req.body);
 
