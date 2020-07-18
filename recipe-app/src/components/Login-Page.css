@@ -35,6 +35,7 @@ form
 {
     color: #481D24;
     margin-bottom: 20px;
+    font-size: 17px;
 }
 
 .login-form-entry input
@@ -46,6 +47,7 @@ form
     border-radius: 8px;
     margin-top: 3px;
     margin-bottom: 25px;
+    font-size: 17px;
 }
 
 input:focus
