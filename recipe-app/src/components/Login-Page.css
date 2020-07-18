@@ -12,9 +12,14 @@
     max-width: 800px;
 }
 
-.login-page h1
+#login-page > h1
 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #F07167;
+    margin-top: 80px;
     margin-bottom: 40px;
+    font-size: 40px;
 }
 
 form
