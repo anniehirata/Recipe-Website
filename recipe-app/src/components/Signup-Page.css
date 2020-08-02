@@ -7,12 +7,12 @@
     margin-left: auto;
 
     width: 80%;
-    height: 60vh;
-    min-width: 715px;
+    height: 100px;
+    min-width: 600px;
     max-width: 800px;
 }
 
-h1, h2
+#signup-page h1, #signup-page h2
 {
     text-align: center;
     margin: 0;
@@ -32,7 +32,7 @@ h1, h2
     margin-bottom: 20px;
 }
 
-form
+#signup-form
 {
     width: 60%;
     margin-left: 20%;
@@ -41,7 +41,7 @@ form
     font-family: "Roboto Light", sans-serif;
 }
 
-label
+.signup-label
 {
     margin: 18px 0px 5px 0px;
     color: #481D24;
@@ -49,7 +49,7 @@ label
     font-size: 17px;
 }
 
-input
+.signup-input
 {
     padding: 7px 10px;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ input
     font-size: 17px;
 }
 
-input:focus
+.signup-input:focus
 {
     outline: none !important;
 }
@@ -92,7 +92,7 @@ input:focus
     flex-direction: column;
 }
 
-button
+#create-button
 {
     width: 40%;
     margin: 40px 30% 0 30%;
@@ -106,12 +106,82 @@ button
     font-family: "Roboto", sans-serif;
 }
 
-button:hover
+#signup-button:hover
 {
     background-color: #F07167;
 }
 
-button:focus
+#signup-button:focus
 {
     outline: 0 !important;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #signup-page 
+    {
+        position: static;
+        min-width: 300px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #signup-page > h1
+    {
+        font-size: 25px;
+        margin: 25px 0 15px 0;
+    }
+
+    #signup-page > h2
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    #signup-form
+    {
+        min-width: 0px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .signup-label 
+    {
+        font-size: 15px;
+    }
+
+    .signup-input
+    {
+        padding: 5px 8px;
+        border: 1.5px solid #F07167;
+        font-size: 15px;
+    }
+
+    .name-entry
+    {
+        width: 100%;
+    }
+    
+    .name-entry label
+    {
+        width: 100%;
+    }
+    
+    .name-entry input
+    {
+        width: 100%;
+    }
+    
+    #last-name input, #last-name label
+    {
+        margin-left: 0;
+    }
+    
+    #signup-button
+    {
+        width: 100%;
+        margin: 40px 0 0 0;
+        height: 35px;
+        font-size: 17px;
+    }
 }

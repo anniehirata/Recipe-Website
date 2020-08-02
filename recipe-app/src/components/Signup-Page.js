@@ -75,27 +75,27 @@ export default class SignupPage extends React.Component {
         return <div><Nav type="login"/>
             <div id="signup-page">
             <h1>Your cookbook, digitized!</h1>
-            <h2>Store all your favorite recipes in one place,<br/>accessible anywhere!</h2>
+            <h2>Store all your favorite recipes in one place, accessible anywhere!</h2>
             <h2>Sign up to start your free cookbook today!</h2>
             
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} id="signup-form">
                 <div className="name-entry">
-                    <label>First Name</label>
-                    <input type="text" value={this.state.firstName} onChange={this.handleFirstChange}></input>
+                    <label className="signup-label">First Name</label>
+                    <input className="signup-input" type="text" value={this.state.firstName} onChange={this.handleFirstChange}></input>
                 </div>
                 <div className="name-entry" id="last-name">
-                    <label>Last Name</label>
-                    <input type="text" value={this.state.lastName} onChange={this.handleLastChange}></input>
+                    <label className="signup-label">Last Name</label>
+                    <input className="signup-input" type="text" value={this.state.lastName} onChange={this.handleLastChange}></input>
                 </div>
                 
                 <div id="other-entry">
-                    <label>Email</label>
-                    <input type="text" value={this.state.email} onChange={this.handleEmailChange}></input>
-                    <label>Password</label>
-                    <input type="password" value={this.state.password} onChange={this.handlePasswordChange}></input>
+                    <label className="signup-label">Email</label>
+                    <input className="signup-input" type="text" value={this.state.email} onChange={this.handleEmailChange}></input>
+                    <label className="signup-label">Password</label>
+                    <input className="signup-input" type="password" value={this.state.password} onChange={this.handlePasswordChange}></input>
                     
                 </div>
-                <button>Create Account</button>
+                <button id="signup-button">Create Account</button>
             </form>
         </div>
         </div>;
