@@ -66,15 +66,15 @@ export default class LoginPage extends React.Component
             <Nav type="signup"/>
             <div id="login-page">
                 <h1>Welcome back!</h1>
-                <form onSubmit={this.onSubmit}>
+                <form id="login-form" onSubmit={this.onSubmit}>
                     <div class="login-form-entry">
-                        <label>Email</label>
-                        <input type="text" value={this.state.email} onChange={this.onEmailChange}></input>
-                        <label>Password</label>
-                        <input type="password" value={this.state.password} onChange={this.onPasswordChange} id="pass-input"></input>
+                        <label className="login-label">Email</label>
+                        <input className="login-input" type="text" value={this.state.email} onChange={this.onEmailChange}></input>
+                        <label className="login-label">Password</label>
+                        <input className="login-input" type="password" value={this.state.password} onChange={this.onPasswordChange} id="pass-input"></input>
                         <a id="forgot">Forgot password?</a>
                     </div>
-                    <button>Log in</button>
+                    <button id="login-button">Log in</button>
                 </form>
             </div>
         </div>
