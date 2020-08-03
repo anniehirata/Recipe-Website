@@ -75,7 +75,7 @@ export default class SignupPage extends React.Component {
         return <div><Nav type="login"/>
             <div id="signup-page">
             <h1>Your cookbook, digitized!</h1>
-            <h2>Store all your favorite recipes in one place, accessible anywhere!</h2>
+            <h2 id="description">Store all your favorite recipes in one place, accessible anywhere!</h2>
             <h2>Sign up to start your free cookbook today!</h2>
             
             <form onSubmit={this.handleSubmit} id="signup-form">

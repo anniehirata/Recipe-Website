@@ -92,10 +92,10 @@
     flex-direction: column;
 }
 
-#create-button
+#signup-button
 {
-    width: 40%;
-    margin: 40px 30% 0 30%;
+    width: 50%;
+    margin: 40px 25% 0 25%;
     height: 40px;
     font-size: 20px;
     float: center;
@@ -136,6 +136,11 @@
     {
         font-size: 20px;
         margin-bottom: 5px;
+    }
+
+    #description
+    {
+        display: none;
     }
 
     #signup-form
